@@ -1,39 +1,79 @@
-.container {  display: grid;
-    grid-template-columns: 1.4fr 0.8fr;
-    grid-template-rows: 0.2fr 3fr 0.7fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "header header"
-      "gameplay store"
-      "info info";
-  }
+.container {
+  display: grid;
+  grid-template-columns: 1.1fr 1.1fr;
+  grid-template-rows: 0.2fr 3fr 0.7fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header"
+    "gameplay store"
+    "info info";
+}
 
-  *{
-    background-color: rgb(105, 105, 105);
-  }
-  
-  h1{
-    color:antiquewhite;
-  }
+* {
+  background-color: rgb(105, 105, 105);
+}
 
-  .header { grid-area: header; }
-  
-  .gameplay { grid-area: gameplay; }
-  
-  .store { grid-area: store; }
-  
-  .info { grid-area: info; }
-  
-  .maxheight {
-    height: 100vh;
-  }
+h1 {
+  color: antiquewhite;
+}
 
-  .text-center{
-    text-align: center;
-  }
+.header {
+  grid-area: header;
+}
 
-  #universe{
-    height: 200px;
-    width: 200px;
+.gameplay {
+  grid-area: gameplay;
+}
+
+.store {
+  grid-area: store;
+}
+
+.info {
+  grid-area: info;
+}
+
+.max-height {
+  height: 100vh;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.vertical-center {
+    align-items: center;
+}
+
+#universe-img {
+  height: 200px;
+  width: 200px;
+}
+
+.border-none {
+  border: 0px;
+}
+
+.shop-button {
+  width: 100%;
+}
+
+.shop-img {
+  height: 100px;
+  width: 100px;
+}
+
+.box-shadow-none {
+  box-shadow: none;
+}
+
+.flex-rows {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-columns {
+    display: flex;
+    flex-direction: column;
   }

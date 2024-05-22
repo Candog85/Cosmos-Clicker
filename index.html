@@ -11,7 +11,7 @@
 
 <body>
 
-    <div class="container maxheight">
+    <div class="container max-height">
 
         <div class="header text-center">
             <h1>
@@ -19,12 +19,48 @@
             </h1>
         </div>
 
-        <div class="gameplay text-center ">
-            <img src="/images/universe.png" alt="" id="universe">
+        <div class="gameplay text-center flex-columns">
+
+            <h1>
+                 <span id="stardustTracker">0</span> Stardust
+            </h1>
+
+            <button onclick="click()" class="border-none">
+                <img src="/images/universe.png" alt="" id="universe-img">
+            </button>
+
+            <h1>
+                Click to get Stardust
+            </h1>
+
         </div>
-        <div class="store">d</div>
+
+        <div class="store flex-column ">
+
+            <button class="shop-button flex-rows border-none vertical-center">
+                <img src="/images/meteor.png" alt="" class="shop-img" id="meteor-img">
+                <h1>Meteor</h1>
+            </button>
+
+            <button class="shop-button flex-rows border-none vertical-center">
+                <img src="/images/meteor.png" alt="" class="shop-img">
+                <h1>Meteor</h1>
+            </button>
+
+        </div>
         <div class="info">d</div>
     </div>
+
+    <script>
+        let stardust = 0
+        let stardustTracker = document.getElementById("stardustTracker")
+
+        function click() {
+            stardust=stardust+1
+            stardustTracker.innerText=(stardust)
+
+        }
+    </script>
 </body>
 
 </html>
