@@ -22,10 +22,10 @@
         <div class="gameplay text-center flex-columns">
 
             <h1>
-                You have <span id="stardustTracker">0</span> Stardust
+                You have <span id="stardustTracker">0.00</span> Stardust
             </h1>
 
-            <button onclick="clicker()" class="border-none">
+            <button onclick="clicker(), update()" class="border-none">
                 <img src="/images/universe.png" alt="" id="universe-img">
             </button>
 
@@ -37,95 +37,33 @@
 
         <div class="store flex-column ">
 
-            <button onclick="meteorBuy()" class="shop-button flex-rows border-none vertical-center">
+            <button onclick="meteorBuy(), update()" class="shop-button flex-rows border-none vertical-center">
                 <img src="/images/meteor.png" alt="" class="shop-img" id="meteor-img">
-                <h1>Meteor - 10 Stardust: <span id="meteorTracker">0</span></h1>
+                <h1>Meteor - Costs 10 SD - Count: <span id="meteorTracker">0</span></h1>
             </button>
 
-            <button onclick="moonBuy()" class="shop-button flex-rows border-none vertical-center">
+            <button onclick="moonBuy(), update()" class="shop-button flex-rows border-none vertical-center">
                 <img src="/images/moon.webp" alt="" class="shop-img">
-                <h1>Moon - 20 Stardust: <span id="moonTracker">0</span></h1>
+                <h1>Moon - Costs 20 SD - Count: <span id="moonTracker">0</span></h1>
             </button>
 
-            <button onclick="planetBuy()" class="shop-button flex-rows border-none vertical-center">
+            <button onclick="planetBuy(), update()" class="shop-button flex-rows border-none vertical-center">
                 <img src="/images/planet.png" alt="" class="shop-img">
-                <h1>Planet - 30 Stardust: <span id="planetTracker">0</span></h1>
+                <h1>Planet - Costs 30 SD - Count: <span id="planetTracker">0</span></h1>
             </button>
 
-            <button onclick="starBuy()" class="shop-button flex-rows border-none vertical-center">
+            <button onclick="starBuy(), update()" class="shop-button flex-rows border-none vertical-center">
                 <img src="/images/sun.png" alt="" class="shop-img">
-                <h1>Star - 40 Stardust: <span id="starTracker">0</span></h1>
+                <h1>Star - Costs 40 SD - Count: <span id="starTracker">0</span></h1>
             </button>
 
         </div>
         <div class="info">d</div>
     </div>
 
-    <script>
-        let stardust = 0
-        let meteor = 0
-        let moon = 0
-        let planet = 0
-        let star = 0
+    <script src="script.js"></script>
 
-        let stardustTracker = document.getElementById("stardustTracker")
-
-        function clicker() {
-            stardust = stardust + 1
-            stardustTracker.innerText = (stardust)
-        }
-
-        function meteorBuy() {
-            if (stardust >= 10) {
-                meteor = meteor + 1
-                stardust = stardust - 10
-                stardustTracker.innerText = stardust
-            }
-
-            else {
-                alert("Brokie!!!!!")
-            }
-        }
-
-        function moonBuy() {
-            if (stardust >= 20) {
-                moon = moon + 1
-                stardust = stardust - 20
-                stardustTracker = stardust - 20
-                stardustTracker.innerText = stardust
-            }
-
-            else {
-                alert("Brokie!!!!!")
-            }
-        }
-
-        function planetBuy() {
-            if (stardust >= 10) {
-                planet = planet + 1
-                stardust = stardust - 30
-                stardustTracker.innerText = stardust
-            }
-
-            else {
-                alert("Brokie!!!!!")
-            }
-        }
-
-        function starBuy() {
-            if (stardust >= 10) {
-                star = star + 1
-                stardust = stardust - 40
-                stardustTracker.innerText = stardust
-            }
-
-            else {
-                alert("Brokie!!!!!")
-            }
-        }
-
-        function gameLoop() { }
-    </script>
 </body>
+
 
 </html>
