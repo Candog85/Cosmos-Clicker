@@ -63,12 +63,12 @@ function moonBuy() {
 }
 
 function planetBuy() {
-    let cost = (20 + (planet ** 1.25)).toFixed(0)
+    let cost = (30 + (planet ** 1.25)).toFixed(0)
     if (stardust >= cost) {
         planet = planet + 1
         stardust = stardust - 30
         planetTracker.innerText = planet
-        planetCost.innerText = (20 + (planet ** 1.25 )).toFixed(0)
+        planetCost.innerText = (30 + (planet ** 1.25 )).toFixed(0)
     }
 
     else {
@@ -77,12 +77,12 @@ function planetBuy() {
 }
 
 function starBuy() {
-    let cost = (20 + (star ** 1.25)).toFixed(0)
+    let cost = (40 + (star ** 1.25)).toFixed(0)
     if (stardust >= cost) {
         star = star + 1
         stardust = stardust - 40
         starTracker.innerText = star
-        starCost.innerText = (20 + (star ** 1.25)).toFixed(0)
+        starCost.innerText = (40 + (star ** 1.25)).toFixed(0)
     }
 
     else {
