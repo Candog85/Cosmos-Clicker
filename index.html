@@ -22,7 +22,7 @@
         <div class="gameplay text-center flex-columns">
 
             <h1>
-                You have <span id="stardustTracker">0.00</span> Stardust
+                You have <span id="stardustTracker">0</span> Stardust
             </h1>
 
             <button onclick="clicker(), update()" class="border-none">
@@ -44,17 +44,17 @@
 
             <button onclick="moonBuy(), update()" class="shop-button flex-rows border-none vertical-center">
                 <img src="/images/moon.webp" alt="" class="shop-img">
-                <h1>Moon - Costs 20 SD - Count: <span id="moonTracker">0</span></h1>
+                <h1>Moon - Costs <span id="moonCost">20</span> SD - Count: <span id="moonTracker">0</span></h1>
             </button>
 
             <button onclick="planetBuy(), update()" class="shop-button flex-rows border-none vertical-center">
                 <img src="/images/planet.png" alt="" class="shop-img">
-                <h1>Planet - Costs 30 SD - Count: <span id="planetTracker">0</span></h1>
+                <h1>Planet - Costs <span id="planetCost">30</span> SD - Count: <span id="planetTracker">0</span></h1>
             </button>
 
             <button onclick="starBuy(), update()" class="shop-button flex-rows border-none vertical-center">
                 <img src="/images/sun.png" alt="" class="shop-img">
-                <h1>Star - Costs 40 SD - Count: <span id="starTracker">0</span></h1>
+                <h1>Star - Costs <span id="starCost">40</span> SD - Count: <span id="starTracker">0</span></h1>
             </button>
 
         </div>
