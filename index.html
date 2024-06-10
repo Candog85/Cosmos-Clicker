@@ -13,20 +13,20 @@
 
     <div class="container max-height">
 
-        <div class="header text-center">
-            <h1>
+        <div class="header text-center section-borders">
+            <h1 class="title">
                 Cosmos Clicker
             </h1>
         </div>
 
-        <div class="gameplay text-center flex-columns">
+        <div class="gameplay text-center flex-columns section-borders vertical-center">
 
             <h1>
                 You have <span id="stardustTracker">0</span> Stardust
             </h1>
 
-            <button onclick="clicker(), update()" class="border-none">
-                <img src="/images/universe.png" alt="" id="universe-img">
+            <button onclick="clicker(), update()" class="border-none" id="clicker">
+                <img src="images/universe.png" alt="" id="universe-img">
             </button>
 
             <h1>
@@ -35,30 +35,48 @@
 
         </div>
 
-        <div class="store flex-column ">
+        <div class="store flex-column horizontal-center vertical-center section-borders">
 
-            <button onclick="meteorBuy(), update()" class="shop-button flex-rows border-none vertical-center">
-                <img src="images/meteor.png" alt="" class="shop-img" id="meteor-img">
-                <h1>Meteor - Costs <span id="meteorCost">10</span> SD - Count: <span id="meteorTracker">0</span></h1>
-            </button>
+            <div class="button-margins">
 
-            <button onclick="moonBuy(), update()" class="shop-button flex-rows border-none vertical-center">
-                <img src="images/moon.webp" alt="" class="shop-img">
-                <h1>Moon - Costs <span id="moonCost">20</span> SD - Count: <span id="moonTracker">0</span></h1>
-            </button>
+                <button onclick="meteorBuy(), update()" class="shop-button flex-rows vertical-center button-borders">
+                    <img src="images/meteor.png" alt="" class="shop-img" id="meteor-img">
+                    <h1>Meteor - Costs <span id="meteorCost">10</span> SD - Count: <span id="meteorTracker">0</span>
+                    </h1>
+                </button>
 
-            <button onclick="planetBuy(), update()" class="shop-button flex-rows border-none vertical-center">
-                <img src="images/planet.png" alt="" class="shop-img">
-                <h1>Planet - Costs <span id="planetCost">30</span> SD - Count: <span id="planetTracker">0</span></h1>
-            </button>
+            </div>
 
-            <button onclick="starBuy(), update()" class="shop-button flex-rows border-none vertical-center">
-                <img src="images/sun.png" alt="" class="shop-img">
-                <h1>Star - Costs <span id="starCost">40</span> SD - Count: <span id="starTracker">0</span></h1>
-            </button>
+            <div class="button-margins">
+
+                <button onclick="moonBuy(), update()" class="shop-button flex-rows vertical-center button-borders">
+                    <img src="images/moon.webp" alt="" class="shop-img">
+                    <h1>Moon - Costs <span id="moonCost">20</span> SD - Count: <span id="moonTracker">0</span></h1>
+                </button>
+
+            </div>
+
+            <div class="button-margins">
+
+                <button onclick="planetBuy(), update()" class="shop-button flex-rows vertical-center button-borders">
+                    <img src="images/planet.png" alt="" class="shop-img">
+                    <h1>Planet - Costs <span id="planetCost">30</span> SD - Count: <span id="planetTracker">0</span>
+                    </h1>
+                </button>
+
+            </div>
+
+            <div class="button-margins">
+
+                <button onclick="starBuy(), update()" class="shop-button flex-rows vertical-center button-borders">
+                    <img src="images/sun.png" alt="" class="shop-img">
+                    <h1>Star - Costs <span id="starCost">40</span> SD - Count: <span id="starTracker">0</span></h1>
+                </button>
+
+            </div>
 
         </div>
-        <div class="info">d</div>
+        <div class="info">MEOW!</div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
